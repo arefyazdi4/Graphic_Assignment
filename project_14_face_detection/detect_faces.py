@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     # loop over the faces and draw a rectangle around each
     for (x, y, w, h) in faceRects:
-        cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv2.rectangle(img=image, pt1=(x, y), pt2=(x + w, y + h), color=(0, 255, 0), thickness=2)
 
     # show the detected faces
     cv2.imshow("Faces", image)
